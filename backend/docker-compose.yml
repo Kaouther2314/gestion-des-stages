@@ -1,0 +1,31 @@
+services:
+  hospital-api:
+    build: .
+    container_name: hospital-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app
+    command: ["npm", "run", "start:docker"]
+
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db   # ← volume معرف هنا
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: abdou
+      MONGO_INITDB_ROOT_PASSWORD: abdou2025
+      MONGO_INITDB_DATABASE: hospital_db
+
+# تعريف volume بشكل صحيح في أسفل الملف
+volumes:
+  mongo-data: {}   # ← هذه الطريقة الصحيحة لتعريف volume
