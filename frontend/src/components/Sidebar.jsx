@@ -22,7 +22,7 @@ const Sidebar = () => {
 
   const hospitalMenu = [
     { path: '/hospital/dashboard', label: 'Tableau de Bord' },
-    { path: '/hospital/requests', label: 'Demandes de Stage' },
+    
     { path: '/hospital/profile', label: 'Profil Hôpital' }
   ]
 

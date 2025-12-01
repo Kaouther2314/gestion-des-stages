@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Sidebar from '../../components/Sidebar'
 
-const InternshipRequests = () => {
+const HospitalRequests = () => {
   const [requests, setRequests] = useState([
     {
       id: 1,
@@ -239,4 +239,4 @@ const styles = {
   }
 }
 
-export default InternshipRequests
+export default HospitalRequests
