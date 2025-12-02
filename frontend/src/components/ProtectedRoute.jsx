@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children, role }) => {
   if (loading) {
     return <div style={{ padding: '2rem', textAlign: 'center' }}>Chargement...</div>
   }
-return children;
+
   
  // if (!isAuthenticated) {
   //  return <Navigate to="/login" replace />
@@ -23,7 +23,7 @@ return children;
    // )
  // }
 
-  //return children 
+  return children ;
 }
 
 export default ProtectedRoute
