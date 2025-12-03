@@ -106,7 +106,7 @@ export default function Home() {
             fontWeight: 'bold',
             color: 'white'
           }}>M</div>
-          <h1 style={{ fontSize: '1.75rem', fontWeight: 'bold', color: 'white', margin: 0 }}>Medilab</h1>
+          <h1 style={{ fontSize: '1.75rem', fontWeight: 'bold', color: 'white', margin: 0 }}>MedStage</h1>
         </div>
         
         <nav style={{
@@ -146,7 +146,7 @@ export default function Home() {
             marginBottom: '1.5rem',
             lineHeight: 1.2,
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)'
-          }}>BIENVENUE SUR MEDILAB</h2>
+          }}>BIENVENUE SUR MEDSTAGE</h2>
           <p style={{
             fontSize: '1.25rem',
             color: '#bfdbfe',
@@ -386,7 +386,7 @@ export default function Home() {
         zIndex: 10,
         textAlign: 'center'
       }}>
-        <p>© 2024 Medilab - Gestion des Stages Médicaux | Wilaya de Boumerdès</p>
+        <p>© 2024 MedStage- Gestion des Stages Médicaux | Wilaya de Boumerdès</p>
       </div>
 
       <style>{`
